@@ -102,21 +102,45 @@ public class App
 
 // sort manually
 
-//8. Create a new hashSet and populate it with random names. Sort the names in alphabetical order using only a Set or a child of Set.
+//8. Create a new hashSet and populate it with random names.
+// Sort the names in alphabetical order using only a Set or a child of Set.
         Set<String> names8 = new HashSet<>();
         names8.add("Lena");
         names8.add("Arne");
         names8.add("Tomas");
         names8.add("Stina");
         names8.add("Bert");
+        System.out.println("Ex8. " + names8);
 
+//Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String).
+        HashMap<Integer, String> cars = new HashMap<>();
+        cars.put(231, "Volvo");
+        cars.put(539, "Saab");
+        cars.put(583, "BMV");
+        cars.put(924, "Mercedes");
 
-//9. Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String). Lastly, print out the entire hashMap.
+//9. print out the entire hashMap.
+        System.out.println("Ex9: " + cars);
 
+//10. print out only the keys.
+        System.out.println("Ex10. " + cars.keySet());
 
-//10. Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String). Lastly, print out only the keys.
-//11. Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String). Lastly, print out only the values.
-//12. Create a new class and call it Car. Add fields for Id, Brand and Model + getters and setters Create a new hashMap of type <Integer,Car> and populate it with elements
+//11. print out only the values.
+        System.out.println("Ex11: " + cars.values());
+
+//12. Create a new class and call it Car. Add fields for Id, Brand and Model + getters and setters.
+// Create a new hashMap of type <Integer,Car> and populate it with elements containing an id(Integer) and a car object(Car).
+// Lastly, print out only the car's brand.
+        System.out.println("EX12: ");
+        Car car1 = new Car("365", "Volvo", "V70");
+        Car car2 = new Car("675", "Saab", "fgx");
+        Car car3 = new Car("748", "BMW", "FX");
+        HashMap<Integer, Car> sportcars = new HashMap<>();
+
+        sportcars.put(12, car1);
+        sportcars.put(45, car2);
+        sportcars.put(67, car3);
+        System.out.println(sportcars.values());
 
     }
 }
