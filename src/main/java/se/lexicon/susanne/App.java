@@ -102,10 +102,18 @@ public class App
 
 // sort manually
 
-//8. sort the names in alphabetical order using only a Set or a child of Set.
+//8. Create a new hashSet and populate it with random names. Sort the names in alphabetical order using only a Set or a child of Set.
+        Set<String> names8 = new HashSet<>();
+        names8.add("Lena");
+        names8.add("Arne");
+        names8.add("Tomas");
+        names8.add("Stina");
+        names8.add("Bert");
 
 
 //9. Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String). Lastly, print out the entire hashMap.
+
+
 //10. Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String). Lastly, print out only the keys.
 //11. Create a new hashMap of type <Integer,String> and populate it with elements containing an id(Integer) and a car brand(String). Lastly, print out only the values.
 //12. Create a new class and call it Car. Add fields for Id, Brand and Model + getters and setters Create a new hashMap of type <Integer,Car> and populate it with elements
